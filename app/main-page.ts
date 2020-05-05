@@ -1,5 +1,5 @@
 import {Page} from 'tns-core-modules/ui/page';
-import {WebView, LoadEventData} from 'tns-core-modules//ui/web-view';
+import {WebView} from 'tns-core-modules//ui/web-view';
 import {webViewInterfaceDemoVM} from './main-view-model';
 import {TextField} from 'tns-core-modules/ui/text-field';
 import {alert} from 'tns-core-modules/ui/dialogs';
@@ -11,6 +11,7 @@ var oLangWebViewInterface: WebViewInterface;
 export function pageLoaded(args){
     page = <Page>args.object;
     page.bindingContext = webViewInterfaceDemoVM;
+    setupWebViewInterface(page); 
 }
 
 /**
