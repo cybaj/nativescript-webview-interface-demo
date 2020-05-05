@@ -3,7 +3,6 @@ import {WebView} from 'tns-core-modules//ui/web-view';
 import {webViewInterfaceDemoVM} from './main-view-model';
 import {TextField} from 'tns-core-modules/ui/text-field';
 import {alert} from 'tns-core-modules/ui/dialogs';
-import {topmost} from 'tns-core-modules/ui/frame';
 import { WebViewInterface } from 'nativescript-webview-interface';
 var page: Page;
 var oLangWebViewInterface: WebViewInterface;
@@ -87,9 +86,3 @@ export function getSelectedLanguageDeferred(){
     });     
 }
 
-/**
- * Navigates to second page.
- */
-export function goToPage2(){
-    topmost().navigate('page2');
-}

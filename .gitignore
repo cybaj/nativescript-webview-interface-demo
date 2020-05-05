@@ -5,3 +5,5 @@ lib
 app/*.js
 .DS_Store
 .vscode
+.migration_backup
+.update_backup
